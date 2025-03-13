@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen">
       <head>
         <title>illustrato</title>
         <meta name="description" content="Discover and share art and AI-generated creations on Illustrato" />
@@ -28,7 +28,7 @@ export default function Home() {
       </head>
 
       {/* Navigation Bar */}
-      <header className="w-full p-4 bg-transparent absolute top-0 z-20">
+      <header className="w-full p-4 bg-transparent absolute top-0 z-10">
         <nav className="max-w-7xl mx-auto flex justify-end items-center space-x-4">
           <Button variant="ghost" className="text-white hover:bg-white/20">
             <Link href="/explore">Explore</Link>
@@ -59,21 +59,19 @@ export default function Home() {
         <div className="absolute inset-0 w-full h-full bg-[#0a1929]">
           {/* Optional subtle gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#081623] to-[#0c1f38]/90"></div>
-        </div>
-        
-        {/* Globe positioned centrally */}
-        {mounted && (
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
-            <div className="relative w-[min(90vh,90vw)] h-[min(90vh,90vw)] flex items-center justify-center">
-              <Globe className="pointer-events-auto" />
+          
+          {/* Globe positioned centrally - only render one instance of the Globe */}
+          {mounted && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Globe className="size-[800px]" />
             </div>
-          </div>
-        )}
+          )}
+        </div>
 
         {/* Centered Logo */}
-        <div className="z-10 text-center px-4 relative">
-          <h1 className="text-6xl font-bold text-white mb-6">illustrato</h1>
-          <TypingAnimation className="text-xl text-white/90 max-w-xl mx-auto mb-8">
+        <div className="z-10 text-center px-4">
+          <h1 className="text-6xl font-bold text-black mb-6">illustrato</h1>
+          <TypingAnimation className="text-xl text-black/90 max-w-xl mx-auto mb-8">
             A community-driven digital gallery
           </TypingAnimation>
           <RainbowButton>
@@ -83,7 +81,7 @@ export default function Home() {
       </main>
       
       {/* Thin Footer */}
-      <footer className="w-full bg-black/90 text-white/80 py-3 relative z-10">
+      <footer className="w-full bg-black/90 text-white/80 py-3">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
           <div>© 2025 Illustrato</div>
           <div className="flex space-x-10">
