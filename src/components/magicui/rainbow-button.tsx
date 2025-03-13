@@ -7,14 +7,14 @@ import { cn } from "@/lib/utils";
  */
 interface RainbowButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  // Add at least one property to avoid the empty interface error
-  customProp?: boolean;
+  // Add a property that makes sense for a button component
+  variant?: 'default' | 'outline'; 
 }
 
 export const RainbowButton = React.forwardRef<
   HTMLButtonElement,
   RainbowButtonProps
->(({ children, className, customProp: _, ...props }, ref) => {
+>(({ children, className, variant = 'default', ...props }, ref) => {
   return (
     <button
       ref={ref}
