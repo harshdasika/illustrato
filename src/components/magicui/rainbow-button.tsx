@@ -1,6 +1,11 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 
+/**
+ * Props for the RainbowButton component.
+ * This extends React's built-in button attributes.
+ * (Left here in case of future extensions)
+ */
 interface RainbowButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 

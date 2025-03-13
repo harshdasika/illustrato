@@ -79,8 +79,8 @@ export default function FAQPage() {
                 How do I create an account?
               </AccordionTrigger>
               <AccordionContent className="text-white/80 pb-4">
-                Creating an account is simple! Click the "Sign Up" button in the navigation bar, 
-                fill in your details, and follow the verification steps. Once completed, you'll have 
+                Creating an account is simple! Click the &quot;Sign Up&quot; button in the navigation bar, 
+                fill in your details, and follow the verification steps. Once completed, you&apos;ll have 
                 full access to all illustrato features, including uploading your own creations.
               </AccordionContent>
             </AccordionItem>
