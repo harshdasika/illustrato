@@ -1,7 +1,7 @@
 // src/app/page.tsx
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
@@ -12,6 +12,12 @@ import { AuthModal } from "@/components/auth/auth-modal";
 export default function Home() {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showSignupModal, setShowSignupModal] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  
+  // Only render the Globe component after the component has mounted
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -54,18 +60,18 @@ export default function Home() {
           {/* Optional subtle gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#081623] to-[#0c1f38]/90"></div>
           
-          {/* Globe positioned centrally */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative h-[800px] w-[800px] flex items-center justify-center overflow-hidden">
-              <Globe className="!absolute !inset-0 !top-25 !left-0 !transform-none opacity-0" />
+          {/* Globe positioned centrally - only render one instance of the Globe */}
+          {mounted && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Globe className="size-[800px]" />
             </div>
-          </div>
+          )}
         </div>
 
         {/* Centered Logo */}
         <div className="z-10 text-center px-4">
-          <h1 className="text-6xl font-bold text-black mb-6">illustrato</h1>
-          <TypingAnimation className="text-xl text-black/90 max-w-xl mx-auto mb-8">
+          <h1 className="text-6xl font-bold text-white mb-6">illustrato</h1>
+          <TypingAnimation className="text-xl text-white/90 max-w-xl mx-auto mb-8">
             A community-driven digital gallery
           </TypingAnimation>
           <RainbowButton>
@@ -73,7 +79,6 @@ export default function Home() {
           </RainbowButton>
         </div>
       </main>
-      <Globe className="!absolute !inset-0 !top-25 !left-0 !transform-none opacity-100" />
       
       {/* Thin Footer */}
       <footer className="w-full bg-black/90 text-white/80 py-3">
