@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ Illustrato
 
-## Getting Started
+*A community-driven digital gallery for artists and AI creators*
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌐 Experience Illustrato
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Visit Illustrato** *(Coming Soon)*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Illustrato is where creativity meets community. A place for digital artists—both human and AI-assisted—to showcase their work, gain inspiration, and connect with a global audience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- **🎨 Showcase Your Art** — Upload and display your creations in a beautiful, responsive gallery
+- **🔍 Discover New Work** — Explore trending, popular, and recommended artwork
+- **🤖 AI-Friendly** — Supports both traditional and AI-generated artwork with proper attribution
+- **👥 Social Integration** — Sign in with Google, Discord, or Twitter
+- **💬 Community Engagement** — Like, comment, and follow your favorite artists
+- **📱 Responsive Design** — Beautiful experience across all devices
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Illustrato is built with modern, cutting-edge technologies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend**: Next.js, React, TypeScript
+- **Styling**: Tailwind CSS with shadcn/ui
+- **Animations**: Custom animations and Magic UI
+- **Authentication**: Supabase Auth with social providers
+- **Database**: Supabase PostgreSQL
+- **Storage**: Supabase Storage for artwork uploads
+- **Deployment**: Vercel
 
-## Deploy on Vercel
+## 📝 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🙏 Acknowledgements
+
+- Next.js - The React Framework
+- Supabase - Open source Firebase alternative
+- Tailwind CSS - A utility-first CSS framework
+- shadcn/ui - Re-usable components built with Radix UI and Tailwind
+- Vercel - Platform for frontend frameworks and static sites
+
+---
+
+Made with ❤️ by the Illustrato team
+
+© 2025 Illustrato
