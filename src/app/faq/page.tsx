@@ -112,7 +112,7 @@ export default function FAQPage() {
                 How do I report inappropriate content?
               </AccordionTrigger>
               <AccordionContent className="text-white/80 pb-4">
-                If you encounter content that violates our community guidelines, please use the "Report" 
+                If you encounter content that violates our community guidelines, please use the &quot;Report&quot; 
                 button available on every artwork page. Our moderation team reviews all reports promptly 
                 and takes appropriate action to maintain a safe and respectful environment.
               </AccordionContent>
@@ -141,7 +141,7 @@ export default function FAQPage() {
           </Accordion>
           
           <div className="mt-8 text-center">
-            <p className="text-white/80 mb-4">Still have questions? We're here to help!</p>
+            <p className="text-white/80 mb-4">Still have questions? We&apos;re here to help!</p>
             <Button className="bg-white text-[#0a1929] hover:bg-white/80">
               <Link href="/contact">Contact Support</Link>
             </Button>
