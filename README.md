@@ -21,11 +21,10 @@ Illustrato is where creativity meets community. A place for digital artists—bo
 
 ## 🚀 Tech Stack
 
-Illustrato is built with modern, cutting-edge technologies:
+Illustrato is built with modern, open-source technologies:
 
 - **Frontend**: Next.js, React, TypeScript
-- **Styling**: Tailwind CSS with shadcn/ui
-- **Animations**: Custom animations and Magic UI
+- **Styling**: Tailwind CSS
 - **Authentication**: Supabase Auth with social providers
 - **Database**: Supabase PostgreSQL
 - **Storage**: Supabase Storage for artwork uploads
