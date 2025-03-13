@@ -70,8 +70,8 @@ export default function Home() {
 
         {/* Centered Logo */}
         <div className="z-10 text-center px-4">
-          <h1 className="text-6xl font-bold text-white mb-6">illustrato</h1>
-          <TypingAnimation className="text-xl text-white/90 max-w-xl mx-auto mb-8">
+          <h1 className="text-6xl font-bold text-black mb-6">illustrato</h1>
+          <TypingAnimation className="text-xl text-black/90 max-w-xl mx-auto mb-8">
             A community-driven digital gallery
           </TypingAnimation>
           <RainbowButton>
