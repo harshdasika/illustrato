@@ -30,6 +30,11 @@ export default function FAQPage() {
           <Button variant="ghost" className="text-white hover:bg-white/20">
             <Link href="/explore">Explore</Link>
           </Button>
+
+          <Button variant="ghost" className="text-white hover:bg-white/20">
+            <Link href="/">Home</Link>
+          </Button>
+
           <Button 
             variant="ghost" 
             className="text-white hover:bg-white/20"
@@ -37,15 +42,13 @@ export default function FAQPage() {
           >
             Login
           </Button>
+          
           <Button 
             variant="outline" 
             className="bg-white/10 text-white border-white/20 hover:bg-white/30"
             onClick={() => setShowSignupModal(true)}
           >
             Sign Up
-          </Button>
-          <Button variant="ghost" className="text-white hover:bg-white/20">
-            <Link href="/">Home</Link>
           </Button>
         </nav>
       </header>
